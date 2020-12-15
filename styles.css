@@ -65,7 +65,7 @@ a {
 #profile {
     background-image: url(./assests/kelementaxi-background.jpg);
     background-size: cover;
-    background-position: 35%;
+    background-position: 35% 15%;
     position: relative;
     z-index: 1;
 }
