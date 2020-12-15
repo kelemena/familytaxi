@@ -49,11 +49,23 @@ a {
     /* align-items: center; */
     /* justify-content: center; */
 }
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 50px;
+        width: 100%;
+    }
+}  
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 30px;
+        width: 50%;
+    }
+}
+
 #profile {
-    overflow: hidden;
     background-image: url(./assests/kelementaxi-background.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: 35%;
     position: relative;
     z-index: 1;
 }
