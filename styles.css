@@ -28,12 +28,6 @@ a {
     width: 100vw;
 }
   
-.headline {
-    height: 10%;
-    width: 100%;
-    background-color: black;
-    color: white;
-}
 .ford {
     height: 50%;
     width: 100%;
@@ -42,12 +36,10 @@ a {
 }
 .container {
     padding: 60px;
-    min-height: 60vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 @media screen and (max-width: 992px) {
     .container {
@@ -57,15 +49,18 @@ a {
 }  
 @media screen and (max-width: 600px) {
     .container {
+        height: 40vh;
         padding: 30px;
         width: 50%;
     }
 }
 
 #profile {
-    background-image: url(./assests/kelementaxi-background.jpg);
+    background-image: url(./assests/kelementaxi-background-color.jpg);
     background-size: cover;
-    background-position: 35% 15%;
+    background-color: black;
+    /* background-position: 10% 15%; */
+    /* background-position: top center; */
     position: relative;
     z-index: 1;
 }
@@ -91,32 +86,40 @@ a {
 }
 
 #profile h2 {
-    display: block;
-    width: fit-content;
-    font-size: 6rem;
-    position: relative;
-    color: white;
-}
-
-#profile h2 {
-    display: block;
+    display: flex;
     width: fit-content;
     font-size: 4rem;
     position: relative;
     color: white;
+    font-weight: 400;
+    margin-top: 10px;
 }
 
 #profile .cta {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
-    padding: 10px 30px;
+    padding: 10px 20px;
     margin-top: 30px;
     font-size: 2rem;
     letter-spacing: .1rem;
-    border-radius: 30px;
+    border-radius: 25px;
     border: 3px solid rgb(255,230,82);
-    color: rgb(255,230,82);
-    background-color: transparent;
-    /* color: black; */
-    /* background-color: rgb(255,230,82); */
+    /* border: 3px solid #FFC53B; */
+    /* color: rgb(255,230,82); */
+    /* background-color: transparent; */
+    color: black;
+    background-color: rgb(255,230,82);
+    /* background-color: #FFC53B; */
+    font-weight: 800;
+}
+
+#profile .phone{
+    padding-right: 10px;
+}
+
+#profile .city{
+    width: 30px;
+    height: 30px;
 }
