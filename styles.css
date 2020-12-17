@@ -1,0 +1,125 @@
+@import url('https://fonts.google.com/css?family=Montserrat:300,400,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 12px;
+    }
+}  
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+.body {
+    height: 100vh;
+    width: 100vw;
+}
+  
+.ford {
+    height: 50%;
+    width: 100%;
+    background-color: white;
+    color: black
+}
+.container {
+    padding: 60px;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 50px;
+        width: 100%;
+    }
+}  
+@media screen and (max-width: 600px) {
+    .container {
+        height: 40vh;
+        padding: 30px;
+        width: 50%;
+    }
+}
+
+#profile {
+    background-image: url(./assests/kelementaxi-background-color.jpg);
+    background-size: cover;
+    background-color: black;
+    /* background-position: 10% 15%; */
+    /* background-position: top center; */
+    position: relative;
+    z-index: 1;
+}
+
+#profile::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+}
+
+#profile h1 {
+    display: block;
+    width: fit-content;
+    font-size: 6rem;
+    position: relative;
+    color: white;
+}
+
+#profile h2 {
+    display: flex;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: white;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#profile .cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    border-radius: 25px;
+    border: 3px solid rgb(255,230,82);
+    /* border: 3px solid #FFC53B; */
+    /* color: rgb(255,230,82); */
+    /* background-color: transparent; */
+    color: black;
+    background-color: rgb(255,230,82);
+    /* background-color: #FFC53B; */
+    font-weight: 800;
+}
+
+#profile .phone{
+    padding-right: 10px;
+}
+
+#profile .city{
+    width: 30px;
+    height: 30px;
+}
