@@ -51,7 +51,7 @@ a {
 }
 
 #headline {
-    /* background-image: url(./assests/sopron.jpg); */
+    background-image: url(./assests/sopron.jpg);
     background-size: cover;
     background-color: black;
     /* background-position: 10% 15%; */
