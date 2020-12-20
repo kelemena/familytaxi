@@ -8,7 +8,7 @@ html {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    color: black;
+    color: white;
     /* background-color: black; */
 }
 @media screen and (max-width: 992px) {
@@ -130,7 +130,7 @@ a {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: black;
+    background-color: #F3F1F3;
 }
 
 #ford .image {
@@ -142,7 +142,7 @@ a {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    color: white;
+    color: black;
 }
 
 #ford .capacity-number {
