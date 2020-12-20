@@ -53,7 +53,8 @@ a {
 }
 
 #headline {
-    background-image: url(./assests/city-shiluoette.jpg);
+    background-image: url(./assests/sopron.jpg);
+    /* background-image: url(./assests/city-shiluoette.jpg); */
     background-size: cover;
     /* background-color: #F3F1F3; */
     /* background-position: 10% 15%; */
@@ -69,8 +70,8 @@ a {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: white;
-    opacity: .8;
+    background-color: black;
+    opacity: .5;
     z-index: -1;
 }
 
@@ -79,7 +80,7 @@ a {
     width: fit-content;
     font-size: 6rem;
     position: relative;
-    /* color: white; */
+    color: white;
     /* margin-top: 10px; */
 }
 
@@ -188,7 +189,7 @@ a {
 }
 
 #profile {
-    background-image: url(./assests/kelementaxi-background-color.jpg);
+    background-image: url(./assests/kelementaxi-background.jpg);
     background-size: cover;
     background-color: black;
     /* background-position: 10% 15%; */
@@ -205,7 +206,7 @@ a {
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: .4;
+    opacity: 0;
     z-index: -1;
 }
 
