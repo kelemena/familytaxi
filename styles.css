@@ -8,6 +8,8 @@ html {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    color: black;
+    /* background-color: black; */
 }
 @media screen and (max-width: 992px) {
     html {
@@ -27,19 +29,14 @@ a {
     height: 100vh;
     width: 100vw;
 }
-  
-.ford {
-    height: 50%;
-    width: 100%;
-    background-color: white;
-    color: black
-}
+
 .container {
     padding: 60px;
     height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 @media screen and (max-width: 992px) {
     .container {
@@ -49,53 +46,59 @@ a {
 }  
 @media screen and (max-width: 600px) {
     .container {
-        height: 40vh;
+        height: 30vh;
         padding: 30px;
-        width: 50%;
+        width: 100%;
     }
 }
 
-#profile {
-    background-image: url(./assests/kelementaxi-background-color.jpg);
+#headline {
+    background-image: url(./assests/city-shiluoette.jpg);
     background-size: cover;
-    background-color: black;
+    /* background-color: #F3F1F3; */
     /* background-position: 10% 15%; */
     /* background-position: top center; */
     position: relative;
     z-index: 1;
 }
 
-#profile::after {
+#headline::after {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: .6;
+    background-color: white;
+    opacity: .8;
     z-index: -1;
 }
 
-#profile h1 {
+#headline h1 {
     display: block;
     width: fit-content;
     font-size: 6rem;
     position: relative;
-    color: white;
+    /* color: white; */
+    /* margin-top: 10px; */
 }
 
-#profile h2 {
+#headline h2 {
     display: flex;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 3.5rem;
     position: relative;
-    color: white;
+    /* color: white; */
     font-weight: 400;
-    margin-top: 10px;
 }
 
-#profile .cta {
+#headline .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#headline .cta {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,20 +109,93 @@ a {
     letter-spacing: .1rem;
     border-radius: 25px;
     border: 3px solid rgb(255,230,82);
-    /* border: 3px solid #FFC53B; */
-    /* color: rgb(255,230,82); */
-    /* background-color: transparent; */
     color: black;
     background-color: rgb(255,230,82);
-    /* background-color: #FFC53B; */
     font-weight: 800;
 }
 
-#profile .phone{
+#headline .phone{
     padding-right: 10px;
 }
 
-#profile .city{
+#headline .city{
     width: 30px;
     height: 30px;
 }
+
+#ford .ford-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: black;
+}
+
+#ford .image {
+    width: 70%;
+}
+
+#ford .capacity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    color: white;
+}
+
+#ford .capacity-number {
+    display: flex;
+    font-size: 2.5rem;
+    align-items: center;
+    padding-right: 10px;
+    /* fill: yellow; */
+}
+#ford .capacity-icon {
+    width: 50px;
+    padding: 5px;
+    fill: white;
+}
+
+.services-container {
+    /* background-color: #F3F1F3; */
+    /* height: 40vw; */
+    color: #8F8F95;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.wordcloud {
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 40vh; */
+    width: 100vw;
+    color: #8F8F95;
+    font-size: 1.5rem;
+}
+.profile-image {
+    width: 100vw;
+    /* margin-bottom: 20px; */
+}
+
+#profile {
+    background-image: url(./assests/kelementaxi-background.jpg);
+    background-size: cover;
+    background-color: black;
+    /* background-position: 10% 15%; */
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+
+
