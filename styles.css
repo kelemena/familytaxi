@@ -130,7 +130,7 @@ a {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #F3F1F3;
+    background-color:rgb(243,241,243, 0.6);
 }
 
 #ford .image {
@@ -159,7 +159,7 @@ a {
 }
 
 .services-container {
-    /* background-color: #F3F1F3; */
+    /* background-color:rgb(243,241,243, 0.5); */
     /* height: 40vw; */
     color: #8F8F95;
     font-size: 2rem;
@@ -167,10 +167,21 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    /* opacity: .5; */
 }
 
 .wordcloud {
     width: 100%;
+}
+
+.name {
+    color: black;
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-container {
