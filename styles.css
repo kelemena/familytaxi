@@ -8,6 +8,8 @@ html {
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    color: black;
+    background-color: black;
 }
 @media screen and (max-width: 992px) {
     html {
@@ -51,9 +53,9 @@ a {
 }
 
 #headline {
-    background-image: url(./assests/sopron.jpg);
+    background-image: url(./assests/city-shiluoette.jpg);
     background-size: cover;
-    background-color: black;
+    /* background-color: #F3F1F3; */
     /* background-position: 10% 15%; */
     /* background-position: top center; */
     position: relative;
@@ -67,8 +69,8 @@ a {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: .6;
+    background-color: white;
+    opacity: .8;
     z-index: -1;
 }
 
@@ -77,7 +79,7 @@ a {
     width: fit-content;
     font-size: 6rem;
     position: relative;
-    color: white;
+    /* color: white; */
     /* margin-top: 10px; */
 }
 
@@ -86,7 +88,7 @@ a {
     width: fit-content;
     font-size: 3.5rem;
     position: relative;
-    color: white;
+    /* color: white; */
     font-weight: 400;
 }
 
@@ -127,6 +129,7 @@ a {
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: black;
 }
 
 #ford .image {
@@ -138,6 +141,7 @@ a {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
+    color: white;
 }
 
 #ford .capacity-number {
@@ -145,10 +149,12 @@ a {
     font-size: 2.5rem;
     align-items: center;
     padding-right: 10px;
+    /* fill: yellow; */
 }
 #ford .capacity-icon {
     width: 50px;
     padding: 5px;
+    fill: white;
 }
 
 .services-container {
@@ -162,9 +168,23 @@ a {
     /* padding: 20px; */
 }
 
-.profile-image {
+.wordcloud {
     width: 100%;
-    /* margin: 20px; */
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 40vh; */
+    width: 100vw;
+    color: #8F8F95;
+    font-size: 1.5rem;
+}
+.profile-image {
+    width: 100vw;
+    /* margin-bottom: 20px; */
 }
 
 #profile {
@@ -176,5 +196,6 @@ a {
     position: relative;
     z-index: 1;
 }
+
 
 
