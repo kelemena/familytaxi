@@ -1,4 +1,4 @@
-@import url('https://fonts.google.com/css?family=Montserrat:300,400,700&display=swap');
+/* @import url('https://fonts.google.com/css?family=Montserrat:300,400,700&display=swap'); */
 * {
     padding: 0;
     margin: 0;
@@ -113,9 +113,11 @@ a {
     font-size: 2rem;
     letter-spacing: .1rem;
     /* border-radius: 25px; */
-    border: 1px solid rgb(255,230,82);
+    /* border: 1px solid rgb(255,230,82); */
+    border: 1px solid  rgb(255,209,122);
     /* color: rgba(255,255,255,.8); */
-    color: white;
+    /* color: white; */
+    color: rgb(255,209,122);
     /* background-color: rgb(255,230,82); */
     font-weight: 800;
 }
@@ -131,15 +133,17 @@ a {
 
 #ford .ford-container {
     display: flex;
+    min-height: 70vh;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     /* background-color:rgb(243,241,243, 0.6); */
 }
 
 #ford .image {
     width: 70%;
+    margin-bottom: 20px;
 }
 
 #ford .capacity {
@@ -147,7 +151,7 @@ a {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    color: black;
+    color: rgb(13, 13, 13);
 }
 
 #ford .capacity-number {
@@ -164,35 +168,51 @@ a {
 }
 
 .services-container {
-    background-color:rgb(243,241,243, 0.6);
-    /* height: 40vw; */
-    color: black;
+    /* background-color:rgb(243,241,243, 0.6); */
+    background-color:rgb(13, 13, 13);
+    height: 80vh;
+    color: white;
     font-size: 2.5rem;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    /* align-items: center; */
-    padding: 20px;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
     /* opacity: .5; */
+}
+
+.serviceitem-list {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
 
+.service-icon {
+    width: 70px;
 }
 
 .cloud-container {
-    /* background-color:rgb(243,241,243, 0.5); */
-    /* height: 40vw; */
-    color: #8F8F95;
-    font-size: 2rem;
+    height: 60vh;
+    color: rgb(13, 13, 13);
+    font-size: 2.5rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 20px;
-    /* opacity: .5; */
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .wordcloud {
+    padding-top: 50px;
     width: 90%;
 }
 
@@ -216,9 +236,9 @@ a {
     color: #8F8F95;
     font-size: 1.5rem;
 }
+
 .profile-image {
     width: 100vw;
-    /* margin-bottom: 20px; */
 }
 
 #profile {
