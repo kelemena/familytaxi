@@ -30,7 +30,7 @@ a {
     width: 100vw;
 }
 
-.container {
+.headline-container {
     padding: 60px;
     height: 100vh;
     display: flex;
@@ -39,13 +39,13 @@ a {
     justify-content: center;
 }
 @media screen and (max-width: 992px) {
-    .container {
+    .headline-container {
         padding: 50px;
         width: 100%;
     }
 }  
 @media screen and (max-width: 600px) {
-    .container {
+    .headline-container {
         height: 90vh;
         padding: 30px;
         width: 100%;
@@ -101,7 +101,7 @@ a {
     justify-content: flex-end;
 }
 
-#headline .cta {
+.cta {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,19 +126,18 @@ a {
     padding-right: 10px;
 }
 
-#headline .city{
-    width: 30px;
-    height: 30px;
+.container {
+    color: rgb(13, 13, 13);
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #ford .ford-container {
-    display: flex;
-    min-height: 70vh;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    /* background-color:rgb(243,241,243, 0.6); */
+    /* min-height: 70vh; */
 }
 
 #ford .image {
@@ -156,34 +155,25 @@ a {
 
 #ford .capacity-number {
     display: flex;
-    font-size: 2.5rem;
+    font-size: 4rem;
     align-items: center;
     padding-right: 10px;
     /* fill: yellow; */
 }
 #ford .capacity-icon {
     width: 50px;
-    padding: 5px;
+    margin: 5px;
     fill: white;
 }
 
-.services-container {
-    /* background-color:rgb(243,241,243, 0.6); */
+
+.services {
     background-color:rgb(13, 13, 13);
-    height: 80vh;
     color: white;
-    font-size: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    /* opacity: .5; */
 }
 
 .serviceitem-list {
-    padding-top: 30px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,71 +187,25 @@ a {
 }
 
 .service-icon {
-    width: 70px;
+    width: 50px;
+    margin: 5px;
 }
 
-.cloud-container {
-    height: 60vh;
-    color: rgb(13, 13, 13);
-    font-size: 2.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
 
 .wordcloud {
     padding-top: 50px;
     width: 90%;
 }
 
-.name {
-    color: black;
-    font-size: 4rem;
-    font-weight: 400;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-container {
+    background-color: rgb(240, 240, 240);
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
 }
 
-.profile-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* height: 40vh; */
-    width: 100vw;
-    color: #8F8F95;
-    font-size: 1.5rem;
+#about .cta {
+    color: rgb(13, 13, 13);
+    border-color: rgb(13, 13, 13);
+    /* background-color: rgb(13, 13, 13); */
 }
-
-.profile-image {
-    width: 100vw;
-}
-
-#profile {
-    background-image: url(./assests/kelementaxi-background.jpg);
-    background-size: cover;
-    background-color: black;
-    /* background-position: 10% 15%; */
-    background-position: top center;
-    position: relative;
-    z-index: 1;
-}
-
-#profile::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0;
-    z-index: -1;
-}
-
-
-
