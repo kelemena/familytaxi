@@ -4,19 +4,20 @@
     box-sizing: border-box;
 }
 html {
-    font-size: 14px;
+    font-size: 10px;
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
     color: white;
 }
 @media screen and (max-width: 992px) {
     html {
-        font-size: 12px;
+        font-size: 8px;
     }
 }  
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 350px) {
     html {
-        font-size: 8px;
+        font-size: 7px;
     }
 }
 
@@ -25,12 +26,13 @@ a {
 }
 .body {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .headline-container {
     padding: 60px;
     height: 100vh;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -39,14 +41,12 @@ a {
 @media screen and (max-width: 992px) {
     .headline-container {
         padding: 50px;
-        width: 100%;
     }
 }  
 @media screen and (max-width: 600px) {
     .headline-container {
         height: 90vh;
         padding: 30px;
-        width: 100%;
     }
 }
 
@@ -120,8 +120,26 @@ a {
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
     letter-spacing: normal;
     line-height: 28px;
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        line-height: 30px;
+        padding-left: 120px;
+        padding-right: 120px;    
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        line-height: 32px;
+        padding-left: 300px;
+        padding-right: 300px;    
+    }
 }
 
 .title {
@@ -130,17 +148,29 @@ a {
     font-size: 4.5rem;
     font-weight: 600;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
-#ford .ford-container2 {
-    padding-top: 60px;
-    padding-bottom: 60px;
+#ford .ford-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #ford .image {
-    width: 70%;
-    margin-bottom: 20px;
+    width: 90%;
+}
+
+@media screen and (min-width: 500px) {
+    #ford .image {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 900px) {
+    #ford .image {
+        width: 50%;
+    }
 }
 
 #ford .capacity {
@@ -149,6 +179,7 @@ a {
     justify-content: center;
     padding-top: 10px;
     color: rgb(13, 13, 13);
+    width: 100%;
 }
 
 #ford .capacity-number {
@@ -156,10 +187,9 @@ a {
     font-size: 3rem;
     align-items: center;
     padding-right: 10px;
-    /* fill: yellow; */
 }
 #ford .capacity-icon {
-    width: 50px;
+    width: 6rem;
     margin: 5px;
 }
 
@@ -171,8 +201,9 @@ a {
 
 .serviceitem-list {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .service-item {
@@ -180,24 +211,24 @@ a {
     flex-direction: column;
     align-items: center;
     margin: 20px;
+    white-space: nowrap;
+    width: 40%;
 }
 
+
 .service-icon {
-    width: 50px;
+    width: 7rem;
     margin: 5px;
 }
 
 
 .wordcloud {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    max-width: 90%;
+    max-width: 100%;
+    margin: 20px;
 }
 
 .about-container {
     background-color: rgb(240, 240, 240);
-    padding-left: 30px;
-    padding-right: 30px;
     text-align: center;
 }
 
