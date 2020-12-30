@@ -209,7 +209,7 @@ a {
 .footer {
     background-color: rgb(13, 13, 13);
     color:rgb(122, 125, 127);
-    font-size: 2rem;
-    padding: 30px;
+    font-size: 1.5rem;
+    padding: 20px;
     justify-content: center;
 }
