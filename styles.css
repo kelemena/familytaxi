@@ -191,7 +191,7 @@ a {
 .wordcloud {
     padding-top: 50px;
     padding-bottom: 30px;
-    width: 90%;
+    max-width: 90%;
 }
 
 .about-container {
