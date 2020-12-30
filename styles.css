@@ -53,7 +53,7 @@ a {
 #headline {
     background-image: url(./assests/kelementaxi-background-color.jpg);
     background-size: cover;
-    background-position: bottom center;
+    background-position: center;
     position: relative;
     z-index: 1;
 }
