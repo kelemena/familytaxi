@@ -10,6 +10,30 @@
     <meta name="google-site-verification" content="-qPiLupg-J8nLU3f4jRHS5arJFEGuJX7X7z4EE-uYZk" />
     <link rel="stylesheet" href="styles.css" />
     <title>Kelemen Taxi Sopron</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X9X953919B"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-X9X953919B');
+        gtag('config', 'AW-967807221');
+    </script>
+    <script>
+        function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof(url) != 'undefined') {
+            window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-967807221/XImxCJTM3JUZEPWhvs0D',
+            'event_callback': callback
+        });
+        return false;
+        }
+    </script>
+    
 </head>
 
 <body>
@@ -17,7 +41,7 @@
         <div class="headline-container">
             <h1>Kelemen Nándor</h1>
             <h2><span style="color: rgb(255,209,122); margin-right: 10px">Taxi</span>Sopron</h2>
-            <a href="tel:+36309474515" type="button" class="cta">
+            <a onclick="return gtag_report_conversion('tel:+36309474515');" href="tel:+36309474515" type="button" class="cta">
                 <img src="assests/phone.svg" alt="Phone" class="phone">
                 +36309474515
             </a>
@@ -78,7 +102,7 @@
                 Munkámat 30 éves szakmai tapasztalattal végzem Sopronban és szerte Európában. Utasaim kényelmét és biztonságát <span style="font-weight: bold;">Ford Galaxy</span> autómmal szolgálom. Kiemelt figyelmet fordítok a pontos indulásra és érkezésre.
             </div>
             <div style="margin-top: 30px;">Hívjon bizalommal!</div>
-            <a href="tel:+36309474515" type="button" class="cta">
+            <a onclick="return gtag_report_conversion('tel:+36309474515');" href="tel:+36309474515" type="button" class="cta">
                 <img src="assests/phone-black.svg" alt="Phone" class="phone">
                 +36309474515
             </a>
